@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "municipal_chamber_items",
+  "info": {
+    "singularName": "municipal-chamber-item",
+    "pluralName": "municipal-chamber-items",
+    "displayName": "Municipal Chamber",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "district": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "chairman": {
+      "type": "string"
+    },
+    "membersCount": {
+      "type": "integer"
+    }
+  }
+}

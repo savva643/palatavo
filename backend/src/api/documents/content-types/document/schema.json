@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "document_items",
+  "info": {
+    "singularName": "document-item",
+    "pluralName": "document-items",
+    "displayName": "Document",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["files"]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["reports", "regulations", "materials", "other"],
+      "required": true
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    }
+  }
+}

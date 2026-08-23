@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commission_items",
+  "info": {
+    "singularName": "commission-item",
+    "pluralName": "commission-items",
+    "displayName": "Commission",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "chairman": {
+      "type": "string"
+    },
+    "members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::member-item.member-item",
+      "mappedBy": "commission"
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    }
+  }
+}
