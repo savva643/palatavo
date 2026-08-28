@@ -32,7 +32,7 @@
     "commission": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::commission-item.commission-item",
+      "target": "api::commissions.commission-item",
       "inversedBy": "members"
     },
     "email": {

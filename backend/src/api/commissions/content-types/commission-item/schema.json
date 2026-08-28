@@ -25,7 +25,7 @@
     "members": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::member-item.member-item",
+      "target": "api::members.member-item",
       "mappedBy": "commission"
     },
     "order": {
